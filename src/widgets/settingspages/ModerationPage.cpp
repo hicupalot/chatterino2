@@ -224,11 +224,13 @@ void ModerationPage::addModerationButtonSettings(
         if (unit == "d" && duration > 14)
         {
             line->setText("14");
+            duration->setValue(14);
             return;
         }
         else if (unit == "w" && duration > 2)
         {
             line->setText("2");
+            duration->setValue(2);
             return;
         }
 
